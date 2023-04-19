@@ -1,6 +1,6 @@
 # mev-share
 
-This repository stores the technical specifications for the MEV-share protocol, which is described in this [design doc](https://collective.flashbots.net/t/mev-share-programmably-private-orderflow-to-share-mev-with-users/1264). It is intended to host discussion, development, and release notes for the protocol. Find the current specifications in `/specs` and see issues for active discussions around design tradeoffs and features.**
+This repository stores the technical specifications for the MEV-share protocol, which is described in this [design doc](https://collective.flashbots.net/t/mev-share-programmably-private-orderflow-to-share-mev-with-users/1264). It is intended to host discussion, development, and release notes for the protocol. Find the current specifications in `/specs` and see issues for active discussions around design tradeoffs and features.
 
 Coordinating on one interface for orderflow auctions will reduce switching costs, increase competition, and create a more fair and efficient market.
 
