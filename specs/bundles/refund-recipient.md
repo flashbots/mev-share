@@ -2,6 +2,20 @@
 
 Matchmakers can use the `eth_sendBundle` method to send a bundle of transactions to a block builder. Specifically, the `refund-recipient` version of `eth_sendBundle` extends the [standard `eth_sendBundle` API](https://docs.flashbots.net/flashbots-auction/searchers/advanced/rpc-endpoint#eth_sendbundle) to support two additional fields (`refundPercent` and `refundRecipient`) which can optionally be set to specify how refunds from MEV-Share should be distributed.
 
+<!-- TOC -->
+* [`eth_sendBundle`](#ethsendbundle)
+  * [JSON-RPC Scheme](#json-rpc-scheme)
+    * [`txs`](#txs)
+    * [`blockNumber`](#blocknumber)
+    * [`minTimestamp`](#mintimestamp)
+    * [`maxTimestam`](#maxtimestam)
+    * [`revertingTxHashes`](#revertingtxhashes)
+    * [`replacementUuid`](#replacementuuid)
+    * [`refundPercent`](#refundpercent)
+    * [`refundRecipient`](#refundrecipient)
+  * [Example](#example)
+<!-- TOC -->
+
 ## JSON-RPC Scheme
 
 ```typescript
@@ -24,35 +38,35 @@ Matchmakers can use the `eth_sendBundle` method to send a bundle of transactions
 
 _NOTE: Optional fields are marked with a `?`._
 
-## `txs`
+### `txs`
 
 A list of signed transactions to execute in an atomic bundle.
 
-## `blockNumber`
+### `blockNumber`
 
 A hex encoded block number for which this bundle is valid on.
 
-## `minTimestamp`
+### `minTimestamp`
 
 The minimum timestamp for which this bundle is valid, in seconds since the unix epoch.
 
-## `maxTimestam`
+### `maxTimestam`
 
 The maximum timestamp for which this bundle is valid, in seconds since the unix epoch.
 
-## `revertingTxHashes`
+### `revertingTxHashes`
 
 A list of tx hashes that are allowed to revert or be discarded from the beginning of the bundle.
 
-## `replacementUuid`
+### `replacementUuid`
 
 UUID that can be used to cancel/replace this bundle.
 
-## `refundPercent`
+### `refundPercent`
 
 The percent(from 0 to 99) of full bundle ETH reward that should be passed back to the user(`refundRecipient`) at the end of the bundle.
 
-## `refundRecipient`
+### `refundRecipient`
 
 Address of the wallet that will receive the ETH reward refund from this bundle, default value = EOA of the first transaction inside the bundle.
 
