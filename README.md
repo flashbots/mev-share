@@ -29,9 +29,9 @@ A minimum set of interfaces includes:
 
 ## Current architecture and APIs
 
-The MEV-share design is actively being developed. You can find the latest architecture diagram in `./architecture.md` and individual API specifications can be found in the corresponding files in `/specs`.
+The MEV-share design is actively being developed. You can find the latest architecture diagram in `./architecture.md` and individual API specifications can be found in the `/specs` folder. See `/bundles` for bundle APIs and `/events` for event streaming APIs (each version has its own file).
 
-Concretely, MEV-share introduces a new RPC `mev_sendBundle` to support privacy settings, validity conditions, and complex bundle bodies. This RPC is used for interfaces (1), (3), and (4) above. (2) is handled by a new streaming endpoint and (5) is at the discretion of the block builder, but must fulfill the validity conditions.
+Concretely, MEV-share extends the bundle API to support privacy settings, validity conditions, and complex bundle bodies. This API is used for interfaces (1), (3), and (4) above. (2) is handled by a new streaming endpoint and (5) is at the discretion of the block builder, but must fulfill the validity conditions.
 
 ## Open Questions and Contributions
 
