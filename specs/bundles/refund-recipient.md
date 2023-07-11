@@ -1,6 +1,6 @@
 # `eth_sendBundle`
 
-Matchmakers can use the `eth_sendBundle` method to send a bundle of transactions to a block builder. Specifically, the `refund-recipient` version of `eth_sendBundle` extends the [standard `eth_sendBundle` API](https://docs.flashbots.net/flashbots-auction/searchers/advanced/rpc-endpoint#eth_sendbundle) to support two additional fields (`refundPercent` and `refundRecipient`) which can optionally be set to specify how refunds from MEV-Share should be distributed.
+MEV-Share Nodes can use the `eth_sendBundle` method to send a bundle of transactions to a block builder. Specifically, the `refund-recipient` version of `eth_sendBundle` extends the [standard `eth_sendBundle` API](https://docs.flashbots.net/flashbots-auction/searchers/advanced/rpc-endpoint#eth_sendbundle) to support two additional fields (`refundPercent` and `refundRecipient`) which can optionally be set to specify how refunds from MEV-Share should be distributed.
 
 <!-- TOC -->
 * [`eth_sendBundle`](#eth_sendbundle)

@@ -12,20 +12,22 @@ Today, orderflow originators like wallets and dapps do not actively participate 
 
 Importantly, **MEV-Share is an open-source protocol, not a product or company**. MEV-share uses commitments and privacy to facilitate permissionless collaboration between orderflow originators and searchers, similarly to what MEV-Boost did for builders and validators. It is credibly neutral, permissionless for searchers, and does not enshrine a single block builder. Aggregating order flow to MEV-Share will greatly reduce proprietary order flow as a centralizing force on Ethereum while enabling orderflow originators to participate in the MEV supply chain.
 
+> Note: The MEV-Share Matchmaker was renamed to the MEV-Share Node. This change is reflected in the specifications after June 2023.
+
 ## Minimum standardizable interfaces
 
 There are many parties that may interact as part of the MEV-share protocol:
 1. Orderflow providers / sources (users, wallets, dapps)
 2. Searchers
-3. Matchmakers
+3. MEV-Share Nodes
 4. Blockspace providers / proxies (builders, sequencers, validators, bundlers)
 
 A minimum set of interfaces includes:
-1. How orderflow providers send orderflow and preferences (eg. privacy, redistribution) to matchmakers
-2. How matchmakers share information about orderflow with searchers
-3. How searchers send bids, orderflow, and preferences (eg. validity conditions) to matchmakers
-4. How matchmakers send orderflow and preferences to blockspace providers
-5. How value is redistributed to orderflow providers, blockspace providers, and matchmakers
+1. How orderflow providers send orderflow and preferences (eg. privacy, redistribution) to MEV-Share Nodes
+2. How MEV-Share Nodes share information about orderflow with searchers
+3. How searchers send bids, orderflow, and preferences (eg. validity conditions) to MEV-Share Nodes
+4. How MEV-Share Nodes send orderflow and preferences to blockspace providers
+5. How value is redistributed to orderflow providers, blockspace providers, and MEV-Share Nodes
 
 ## Current architecture and APIs
 
