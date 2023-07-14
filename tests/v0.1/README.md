@@ -4,6 +4,10 @@ This document provides a set of example bundles and their expected execution res
 
 Tests can be found in the file [test.json](./test.json), where the test suite's JSON object is described.
 
+## How to run test
+
+Please refer to [sbundle_test.go](https://github.com/flashbots/builder/blob/main/miner/sbundle_test.go)
+
 ## Preparing State
 
 The transactions in the bundles expect the blockchain state to be set to state in the `genesisAlloc` field.
