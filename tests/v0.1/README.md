@@ -2,7 +2,7 @@
 
 This document provides a set of example bundles and their expected execution results.
 
-Tests can be found in the file [test.json](./test.json), where the test suite's JSON object is described.
+Tests can be found in the file [tests.json](./tests.json), where the test suite's JSON object is described.
 
 ## Preparing State
 
